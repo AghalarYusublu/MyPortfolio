@@ -1,0 +1,22 @@
+#contact-form {
+    .form-inputs {
+        .form-group {
+            #form-name,
+            #form-email,
+            #form-subject,
+            #form-message {
+                width: 100%;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 10px;
+                background: rgba(10, 10, 10, 0.4);
+                color: $secondary-clr;
+                margin-bottom: 15px;
+            }
+            textarea {
+                height: 160px;
+                max-height: 160px;
+                max-width: 100%;
+            }
+        }
+    }
+}

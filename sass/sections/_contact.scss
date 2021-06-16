@@ -1,0 +1,59 @@
+    #contact {
+        @include backgroundImage(url("..//images/b5.jpg"),
+        inherit,
+        no-repeat,
+        cover);
+        background-attachment: fixed;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #000;
+            opacity: 0.8;
+        }
+        .info {
+            .info-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .info-icon {
+                    color: $primary-clr;
+                    font-size: $fourth-font-size;
+                }
+                .cont {
+                    margin-left: 25px;
+                    padding-left: 15px;
+                    border-left: 1px solid rgba(200, 200, 200, 0.4);
+                    h6 {
+                        color: $secondary-clr;
+                    }
+                    p {
+                        font-size: $main-font-size;
+                        color: $third-clr;
+                        line-height: $primary-line-height;
+                        word-spacing: 1px;
+                        font-family: $primary-font-family;
+                    }
+                    .socials-list {
+                        margin: 0;
+                        li {
+                            margin: 0px 15px 0px 0px;
+                            a {
+                                border: none;
+                                color: $third-clr;
+                                width: 15px;
+                                &:hover {
+                                    background: transparent;
+                                    color: $primary-clr;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

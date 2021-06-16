@@ -1,0 +1,198 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $main-font-family;
+}
+
+.mobile-menu-btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 50px;
+    margin-right: 10px;
+    outline: 0;
+    position: relative;
+    right: 0;
+    width: 50px;
+    z-index: 999;
+    display: none;
+    &:focus {
+        outline: none;
+    }
+    span {
+        left: 10px;
+        top: 24px;
+        &::before {
+            top: -8px;
+        }
+        &::after {
+            bottom: -8px;
+        }
+        &::before,
+        &::after {
+            content: '';
+        }
+    }
+    span,
+    span::before,
+    span::after {
+        display: block;
+        background-color: $primary-dark-clr;
+        height: 4px;
+        position: absolute;
+        transition: all .3s ease-in-out;
+        width: 30px;
+    }
+    &.active {
+        span {
+            background-color: transparent;
+            &::before,
+            &::after {
+                background-color: $primary-dark-clr;
+                top: 0;
+            }
+            &::before {
+                transform: rotate(45deg);
+            }
+            &::after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+
+/* .menuButton {
+    cursor: pointer;
+    height: 30px;
+    width: 35px;
+    padding: 10px;
+    top: 35px;
+    right: 25px;
+    z-index: 20;
+    display: none;
+    &:focus {
+        outline: none;
+    }
+    .linesContainer {
+        position: relative;
+        span {
+            top: 3px;
+            left: -6px;
+            &::before,
+            &::after {
+                border-radius: 5px;
+                width: 25px;
+                height: 2px;
+                background-color: $primary-clr;
+                position: absolute;
+                display: block;
+                content: '';
+            }
+            &::before {
+                top: -10px;
+            }
+            &::after {
+                bottom: -10px;
+            }
+        }
+    }
+}
+ */
+
+.sideMenu {
+    width: 105px;
+    height: 100vh;
+    background-color: $primary-clr;
+    color: $secondary-clr;
+    transition: $main-transition;
+    z-index: 10;
+    flex-direction: column;
+    p {
+        font-family: $primary-font-family;
+        padding: 30px 15px;
+        font-size: $primary-font-size;
+        letter-spacing: $main-letter-spacing;
+        font-weight: $primary-font-weight;
+        background-color: $primary-dark-clr;
+    }
+    nav {
+        padding: 26px;
+        a {
+            font-family: $primary-font-family;
+            padding: 13px 17px;
+            margin-bottom: 10px;
+            font-size: $primary-font-size;
+            border-radius: 6px;
+            transition-duration: 0.25s;
+            width: 100%;
+            position: relative;
+            display: inline-block;
+            color: $secondary-clr;
+            &:hover,
+            &:focus {
+                background-color: #c49b66f2;
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+            }
+            span {
+                font-size: $main-font-size;
+                font-weight: $primary-font-weight;
+                position: absolute;
+                left: 55px;
+                top: 18px;
+                transition-delay: 0.2s;
+                transition-duration: 0.3s;
+            }
+        }
+    }
+}
+
+.hoverMenu {
+    width: 220px;
+}
+
+.menuShow {
+    display: block;
+}
+
+.menuHide {
+    display: none;
+}
+
+.sideMenuHide {
+    left: -300px;
+}
+
+.sideMenuShow {
+    left: 0;
+}
+
+
+/* .inner-wrapper {
+    padding: 0px 30px;
+}
+ */
+
+footer {
+    padding: 10px;
+    background-color: $main-dark-clr;
+    text-align: center;
+    p {
+        color: $third-clr;
+        font-family: $primary-font-family;
+        font-size: $main-font-size;
+    }
+}
+
+.outerWrapper {
+    width: calc(100% - 90px);
+    margin-left: 90px;
+    overflow: hidden;
+}
+
+.innerWrapper {
+    margin: 0 auto;
+}

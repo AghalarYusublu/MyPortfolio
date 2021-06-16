@@ -1,0 +1,32 @@
+#about {
+    @include backgroundImage(url("..//images/bg.jpg"),
+    inherit,
+    no-repeat,
+    cover);
+    background-attachment: fixed;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #000;
+        opacity: 0.8;
+    }
+    @extend .section-head;
+    .about-content {
+        p {
+            color: $secondary-clr;
+            font-family: $primary-font-family;
+            font-size: $main-font-size;
+            font-weight: $third-font-weight;
+            letter-spacing: $main-letter-spacing;
+            padding: 48px;
+            span {
+                color: $primary-clr;
+            }
+        }
+    }
+}

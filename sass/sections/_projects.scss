@@ -1,0 +1,79 @@
+#projects {
+    background-color: $main-clr;
+    .project-outer {
+        background-color: $main-dark-clr;
+    }
+    .project-box {
+        padding: 30px;
+        margin-top: 40px;
+        border-radius: 15px;
+        transition: $main-transition;
+        border: 1px solid $primary-clr;
+        color: $primary-clr;
+        &:hover {
+            box-shadow: 0px 14px 28px $primary-clr;
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+        .project-img {
+            flex: 0 0 350px;
+            border-radius: 15px;
+            height: auto;
+            img {
+                border-radius: 15px;
+            }
+        }
+        .project-describe {
+            flex: 0 1 calc(100% - 350px);
+            margin-left: 25px;
+            font-family: $primary-font-family;
+            h3 {
+                letter-spacing: $main-letter-spacing;
+                font-size: $secondary-font-size;
+            }
+            ul {
+                list-style: disc inside;
+                font-size: $main-font-size;
+                line-height: $main-line-height;
+                letter-spacing: $main-letter-spacing;
+                margin-top: 20px;
+                li:not(:first-child) {
+                    margin-top: 10px;
+                }
+                li a {
+                    transition: $main-transition;
+                    color: $third-clr;
+                }
+            }
+            p {
+                font-size: $main-font-size;
+                margin-top: 20px;
+            }
+            h4 {
+                font-size: $main-font-size;
+                margin-top: 7px;
+                letter-spacing: $main-letter-spacing;
+                line-height: $main-line-height;
+                span {
+                    color: $fourth-clr;
+                    display: inline-block;
+                    padding: 0 5px;
+                }
+            }
+            .project-links {
+                margin-top: 50px;
+                a {
+                    font-size: $main-font-size;
+                    margin-right: 20px;
+                    color: $third-clr;
+                    display: inline-block;
+                    transition: $main-transition;
+                    &:hover {
+                        color: $primary-clr;
+                    }
+                }
+            }
+        }
+    }
+}

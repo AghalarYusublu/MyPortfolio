@@ -1,0 +1,49 @@
+#home {
+    .img {
+        img {
+            border-radius: 50%;
+            margin: 0 auto;
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            /* box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5; */
+            filter: grayscale(100%);
+        }
+    }
+    .description {
+        flex: 0 0 50%;
+        padding: 0 15px;
+        width: 100%;
+        color: $secondary-clr;
+        .greeting {
+            font-size: $main-font-size;
+            line-height: 1.2;
+            color: $secondary-clr;
+            font-family: $primary-font-family;
+            font-weight: $third-font-size;
+        }
+        h1 {
+            font-size: $third-font-size;
+            letter-spacing: $third-letter-spacing;
+            margin: 24px 0;
+            font-weight: $third-clr;
+            span {
+                color: $primary-clr;
+            }
+        }
+        .small-bio {
+            color: $third-clr;
+            font-size: $main-font-size;
+            line-height: $main-line-height;
+            letter-spacing: $main-letter-spacing;
+            font-family: $primary-font-family;
+            font-weight: $third-font-size;
+            span {
+                color: $primary-clr;
+            }
+        }
+        .socials-resume {
+            margin-top: 30px;
+        }
+    }
+}

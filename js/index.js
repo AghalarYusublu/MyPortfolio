@@ -114,8 +114,10 @@ $(function() {
             }
         }
     });
-    // Document Ready
-    $(function() {
-        index.init();
-    })
+
 });
+
+// Document Ready
+$(function() {
+    index.init();
+})

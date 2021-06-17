@@ -181,6 +181,10 @@ box-shadow: 12px 0 #d9c8f1;
 /**********************/
 
 @media (max-width: 767px) {
+    #testimonials,
+    #contact {
+        background-position: center !important;
+    }
     .innerWrapper {
         padding: 0px !important;
     }

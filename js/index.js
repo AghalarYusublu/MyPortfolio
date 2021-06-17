@@ -11,6 +11,7 @@ index.$projects = $('#testimonials');
 index.$contact = $('#contact');
 index.$menuButton = $('#menuButton');
 index.$scrollDown = $('#scrollDown');
+index.$loading = $('.loading');
 index.isOpen = false;
 
 
@@ -82,10 +83,13 @@ index.init = function() {
     index.eventListeners();
 }
 
-// Document Ready
-$(function() {
-    index.init();
-})
+
+$(window).on('load', function() {
+    /*    fadeOutTime = 500; */
+    index.$loading.fadeOut(500);
+
+});
+
 
 //OWl Carousel 
 
@@ -110,4 +114,8 @@ $(function() {
             }
         }
     });
+    // Document Ready
+    $(function() {
+        index.init();
+    })
 });

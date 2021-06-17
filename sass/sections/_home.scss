@@ -6,8 +6,10 @@
             width: 350px;
             height: 350px;
             object-fit: cover;
-            /* box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5; */
+            -webkit-object-fit: cover;
             filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            /* box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5; */
         }
     }
     .description {

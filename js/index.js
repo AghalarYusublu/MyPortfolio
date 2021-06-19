@@ -117,6 +117,10 @@ $(function() {
 
 });
 
+AOS.init({
+    duration: 2000,
+})
+
 // Document Ready
 $(function() {
     index.init();

@@ -12,6 +12,8 @@ index.$contact = $('#contact');
 index.$menuButton = $('#menuButton');
 index.$scrollDown = $('#scrollDown');
 index.$loading = $('.loading');
+index.$scrollTop = $('.scroll-top');
+
 index.isOpen = false;
 
 
@@ -20,6 +22,33 @@ index.isOpen = false;
 index.scroll = function(target) {
     $('html,body').animate({ scrollTop: $(target).offset().top }, 500);
 }
+
+/* let scrollTop = document.querySelector(".scroll-top")
+
+document.addEventListener("scroll", function() {
+    if (window.scrollY > 550) {
+        scrollTop.classList.add("active")
+    } else {
+        scrollTop.classList.remove("active")
+    }
+})
+ */
+
+
+$(document).scroll(function() {
+    if (window.scrollY > 650) {
+        index.$scrollTop.addClass("active")
+    } else {
+        index.$scrollTop.removeClass("active")
+    }
+})
+
+
+// Scroll top
+index.$scrollTop.on('click', function() {
+    $(document).scrollTop(0);
+});
+
 
 // Menu button function
 index.showHideMenu = function() {
@@ -86,14 +115,14 @@ index.init = function() {
 
 $(window).on('load', function() {
     /*    fadeOutTime = 500; */
-    index.$loading.fadeOut(500);
+    index.$loading.fadeOut();
 
 });
 
 
 //OWl Carousel 
 
-$(function() {
+/* $(function() {
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -115,7 +144,7 @@ $(function() {
         }
     });
 
-});
+}); */
 
 AOS.init({
     duration: 2000,

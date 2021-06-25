@@ -90,6 +90,39 @@ h6 {
 }
 
 
+/* Scroll-top */
+
+.scroll-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    font-size: $secondary-font-size;
+    line-height: 51px;
+    color: $secondary-clr !important;
+    background: $primary-clr;
+    overflow: hidden;
+    text-align: center;
+    transition: $main-transition;
+    transform: translate3d(0, 100px, 0);
+    border-radius: 5%;
+    cursor: pointer;
+    border: 1px solid $primary-clr;
+}
+
+.scroll-top:hover {
+    color: $primary-clr !important;
+    background: transparent;
+    border: 1px solid $primary-clr;
+}
+
+.scroll-top.active {
+    transform: translate3d(0, 0, 0);
+}
+
+
 /* Mobile menu */
 
 .mobile-menu-btn {
@@ -254,12 +287,6 @@ h6 {
 .sideMenuShow {
     left: 0;
 }
-
-
-/* .inner-wrapper {
-    padding: 0px 30px;
-}
- */
 
 footer {
     padding: 10px;

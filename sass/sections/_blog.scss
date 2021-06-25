@@ -1,4 +1,10 @@
 #blog {
+    .row {
+        .btn-custom {
+            margin: 0 auto;
+            margin-top: 45px;
+        }
+    }
     .post-content {
         background-color: $main-some-dark-clr;
         padding: 30px 15px 15px;

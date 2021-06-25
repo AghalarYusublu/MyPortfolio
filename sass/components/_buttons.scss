@@ -1,19 +1,54 @@
 .btn-custom {
+    width: 129px;
+    height: 40px;
     font-size: 12px;
     text-transform: uppercase;
+    text-align: center;
+    transform-style: preserve-3d;
     letter-spacing: .5px;
     font-weight: $third-font-weight;
     line-height: $secondary-line-height;
-    height: 40px;
-    width: 130px;
-    background: $primary-clr;
-    color: $secondary-clr;
-    text-align: center;
+    position: relative;
     transition: $main-transition;
-    border: 1px solid #C49B66;
-    &:hover {
+    /*   &:hover {
         background: transparent;
         color: #C49B66;
         border: 1px solid #C49B66;
+    } */
+    &:hover::before {
+        transform: translateY(0) rotateX( 0deg);
+    }
+    &:hover::after {
+        transform: translateY(100%) rotateX( 90deg);
+    }
+    &::before {
+        content: attr(back);
+        font-family: "Font Awesome 5 Free";
+        font-size: $primary-font-size;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: transparent;
+        color: $primary-clr;
+        border: 1px solid $primary-clr;
+        line-height: $secondary-line-height;
+        transition: .3s;
+        transform-origin: bottom;
+        transform: translateY(-100%) rotateX( 90deg);
+    }
+    &::after {
+        content: attr(front);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $primary-clr;
+        color: $secondary-clr;
+        transition: .3s;
+        transform-origin: top;
+        transform: translateY(0) rotateX(0deg);
     }
 }

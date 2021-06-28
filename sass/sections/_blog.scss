@@ -8,16 +8,16 @@
     .post-content {
         background-color: $main-some-dark-clr;
         padding: 30px 15px 15px;
-        h3 {
-            font-size: $secondary-font-size;
-            font-weight: $fourth-font-weight;
-            margin-bottom: 15px;
-            a {
-                transition: $main-transition;
-                color: #cccccc;
-                &:hover {
-                    color: $primary-clr;
-                }
+        a {
+            transition: $main-transition;
+            color: #cccccc;
+            &:hover {
+                color: $primary-clr;
+            }
+            h3 {
+                font-size: $secondary-font-size;
+                font-weight: $fourth-font-weight;
+                margin-bottom: 15px;
             }
         }
         p {
@@ -31,9 +31,9 @@
         .post-info {
             padding-top: 15px;
             font-family: $primary-font-family;
+            color: $primary-clr;
             span {
                 font-size: $fifth-font-szie;
-                border-bottom: 1px solid #222;
                 a {
                     color: $primary-clr;
                     transition: $main-transition;
@@ -42,11 +42,12 @@
                     }
                 }
             }
-            .by {
+            .more {
+                border-bottom: 1px solid #222;
+            }
+            .date {
                 float: right;
-                a {
-                    color: $third-clr;
-                }
+                color: $third-clr;
             }
         }
     }

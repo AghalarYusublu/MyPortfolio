@@ -279,7 +279,7 @@ box-shadow: 12px 0 #d9c8f1;
     display: block !important;
   }
   #home .socials-resume .btn-custom {
-    padding: 12px 30px;
+    padding: 12px 50px;
   }
   #home .socials-resume .socials-list {
     -webkit-box-pack: center;
@@ -1155,20 +1155,20 @@ footer p {
   padding: 30px 15px 15px;
 }
 
-#blog .post-content h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-#blog .post-content h3 a {
+#blog .post-content a {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   color: #cccccc;
 }
 
-#blog .post-content h3 a:hover {
+#blog .post-content a:hover {
   color: #C49B66;
+}
+
+#blog .post-content a h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 #blog .post-content p {
@@ -1183,11 +1183,11 @@ footer p {
 #blog .post-content .post-info {
   padding-top: 15px;
   font-family: "Open Sans", sans-serif;
+  color: #C49B66;
 }
 
 #blog .post-content .post-info span {
   font-size: 12px;
-  border-bottom: 1px solid #222;
 }
 
 #blog .post-content .post-info span a {
@@ -1200,11 +1200,12 @@ footer p {
   color: #b38b57;
 }
 
-#blog .post-content .post-info .by {
-  float: right;
+#blog .post-content .post-info .more {
+  border-bottom: 1px solid #222;
 }
 
-#blog .post-content .post-info .by a {
+#blog .post-content .post-info .date {
+  float: right;
   color: #bbb;
 }
 

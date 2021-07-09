@@ -116,7 +116,6 @@ index.init = function() {
 $(window).on('load', function() {
     /*    fadeOutTime = 500; */
     index.$loading.fadeOut();
-
 });
 
 

@@ -7,21 +7,24 @@ index.$home = $('#home');
 index.$about = $('#about');
 index.$skills = $('#skills');
 index.$projects = $('#projects');
-index.$projects = $('#testimonials');
+index.$testimonials = $('#testimonials');
 index.$contact = $('#contact');
 index.$menuButton = $('#menuButton');
 index.$scrollDown = $('#scrollDown');
 index.$loading = $('.loading');
 index.$scrollTop = $('.scroll-top');
+index.$viewMore = $('#view-more')
+index.$inActive = $('.inactive')
+
 
 index.isOpen = false;
 
 
 
 // Scroll function
-index.scroll = function(target) {
+/* index.scroll = function(target) {
     $('html,body').animate({ scrollTop: $(target).offset().top }, 500);
-}
+} */
 
 /* let scrollTop = document.querySelector(".scroll-top")
 
@@ -85,9 +88,9 @@ index.eventListeners = function() {
     });
 
     // Nav menu click events for scroll function
-    $('a[href*=\\#]').on('click', function() {
+    /* $('a[href*=\\#]').on('click', function() {
         index.scroll(this.hash);
-    });
+    }); */
 
     // Menu button click event
     index.$menuButton.on('click', index.showHideMenu);
@@ -112,6 +115,11 @@ index.init = function() {
     index.eventListeners();
 }
 
+/* Blog view more */
+index.$viewMore.on('click', function() {
+    index.$inActive.toggleClass('inactive')
+})
+
 
 $(window).on('load', function() {
     /*    fadeOutTime = 500; */
@@ -119,31 +127,6 @@ $(window).on('load', function() {
 });
 
 
-//OWl Carousel 
-
-/* $(function() {
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
-            },
-            600: {
-                items: 3,
-                nav: false
-            },
-            1000: {
-                items: 5,
-                nav: true,
-                loop: false
-            }
-        }
-    });
-
-}); */
 
 AOS.init({
     duration: 2000,

@@ -4,6 +4,23 @@
             margin: 0 auto;
             margin-top: 45px;
         }
+        .col-lg-4 {
+            &:nth-child(n+1) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .post-img {
+        overflow: hidden;
+        img {
+            transition: $main-transition;
+            object-fit: cover;
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
     }
     .post-content {
         background-color: $main-some-dark-clr;

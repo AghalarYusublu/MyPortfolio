@@ -547,6 +547,14 @@ h6 {
           transform: translate3d(0, 0, 0);
 }
 
+/* Blog view more */
+/* .active {
+    display: block;
+} */
+.inactive {
+  display: none;
+}
+
 /* Mobile menu */
 .mobile-menu-btn {
   background-color: transparent;
@@ -1148,6 +1156,26 @@ footer p {
 #blog .row .btn-custom {
   margin: 0 auto;
   margin-top: 45px;
+}
+
+#blog .row .col-lg-4:nth-child(n+1) {
+  margin-bottom: 15px;
+}
+
+#blog .post-img {
+  overflow: hidden;
+}
+
+#blog .post-img img {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#blog .post-img:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #blog .post-content {

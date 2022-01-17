@@ -934,8 +934,14 @@ footer p {
   padding: 48px;
 }
 
-#about .about-content p span {
+#about .about-content p a {
   color: #C49B66;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#about .about-content p a:hover {
+  color: #b38b57;
 }
 
 #skills .skills-items {

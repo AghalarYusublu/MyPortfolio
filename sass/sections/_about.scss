@@ -24,8 +24,12 @@
             font-weight: $third-font-weight;
             letter-spacing: $main-letter-spacing;
             padding: 48px;
-            span {
+            a {
                 color: $primary-clr;
+                transition: $main-transition;
+                &:hover {
+                    color: $primary-dark-clr;
+                }
             }
         }
     }
